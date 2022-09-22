@@ -1,97 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>JBNM</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Hamburger Navbar</title>
 </head>
+
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="menus.html">Menu</a></li>
-            <li><a href="#form">Contacto</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
-    <header id="header" class="header-text">
-        <h1>JBNM</h1>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">JBNM</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./menus.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2 class="header">¿Quienes somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae maxime minima itaque ipsa praesentium quae voluptatibus placeat. Est perspiciatis ab ut magni delectus architecto fugit excepturi rem unde doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, nemo corrupti. Ipsa porro omnis aliquid similique nulla facere numquam in dignissimos temporibus tenetur, quisquam cupiditate harum nam eveniet labore maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas consectetur, fugiat sunt saepe, dolorem maiores architecto ducimus obcaecati ipsum non maxime debitis eaque vel, in laudantium cupiditate provident quis.
-            Veniam libero ratione iste quod explicabo illum consequuntur error beatae totam eveniet possimus reprehenderit modi ad perspiciatis ipsam excepturi, quaerat provident accusantium nulla a ipsum ea cumque? Ducimus, porro magnam?
-            Sint mollitia facere maiores vitae saepe ut expedita deserunt temporibus, impedit nulla dignissimos cumque sunt placeat totam nostrum minima ex aut? Fuga, placeat! Eius voluptate voluptates vel, quidem fuga enim.</p>
-        </section>
-        <section class="header">
-            <h2>¿Que ofrecemos?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, molestias accusantium, illum modi quia voluptate, totam iste incidunt sequi quos nihil temporibus nesciunt assumenda repudiandae recusandae cumque! Ullam, nemo alias.
-            Neque, est non rerum provident sit numquam ullam iure expedita. Porro ratione consequuntur possimus error ex voluptates explicabo libero sit veritatis unde qui officia quis minima, dolor asperiores facere ad?
-            Laudantium deserunt architecto ea aliquid animi, facere deleniti itaque libero &nbsp; quae ipsum nemo repellendus porro neque, aspernatur illo accusantium laboriosam consequuntur asperiores ab quos quis non dolor dignissimos. Non, reprehenderit?
-            Voluptate eius blanditiis alias voluptas asperiores debitis atque tempora et, optio sequi eum, reiciendis nobis ratione doloribus, maiores esse dolores. Cum, dolorem similique repellat deleniti sit sunt odit consequuntur! Quia.
-            Illo fugiat libero eius corporis, harum enim? Sint libero, veniam provident blanditiis nostrum maiores illum explicabo in iure quae obcaecati soluta repudiandae officiis dolorem? Aspernatur ea placeat sit tempora porro.</p>
-        </section>
-    </main>
-    <footer>
-        <form action="" id="form">
-            <h3>Contactanos</h3>
-            <label for="name-contact">Nombre</label>
-            <input 
-                type="text"
-                name="name"
-                id="name-contact"
-                placeholder="Nombre"
-                required
-                minlength="3"
-                maxlength="50"
+    <header id="headerr"> 
+        <ul class="slide">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+            <div class="controls">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+    </header>
+    <section>
+        <h2 class="title">¿Quienes somos?</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae maxime minima itaque ipsa praesentium quae voluptatibus placeat. Est perspiciatis ab ut magni delectus architecto fugit excepturi rem unde doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, nemo corrupti. Ipsa porro omnis aliquid similique nulla facere numquam in dignissimos temporibus tenetur, quisquam cupiditate harum nam eveniet labore maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas consectetur, fugiat sunt saepe, dolorem maiores architecto ducimus obcaecati ipsum non maxime debitis eaque vel, in laudantium cupiditate provident quis.
+        Veniam libero ratione iste quod explicabo illum consequuntur error beatae totam eveniet possimus reprehenderit modi ad perspiciatis ipsam excepturi, quaerat provident accusantium nulla a ipsum ea cumque? Ducimus, porro magnam?
+        Sint mollitia facere maiores vitae saepe ut expedita deserunt temporibus, impedit nulla dignissimos cumque sunt placeat totam nostrum minima ex aut? Fuga, placeat! Eius voluptate voluptates vel, quidem fuga enim.</p>
+    </section>
+    <section class="header" >
+        <h2 class="title">¿Que ofrecemos?</h2>
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, molestias accusantium, illum modi quia voluptate, totam iste incidunt sequi quos nihil temporibus nesciunt assumenda repudiandae recusandae cumque! Ullam, nemo alias.
+        Neque, est non rerum provident sit numquam ullam iure expedita. Porro ratione consequuntur possimus error ex voluptates explicabo libero sit veritatis unde qui officia quis minima, dolor asperiores facere ad?
+        Laudantium deserunt architecto ea aliquid animi, facere deleniti itaque libero quae ipsum nemo repellendus porro neque, aspernatur illo accusantium laboriosam consequuntur asperiores ab quos quis non dolor dignissimos. Non, reprehenderit?
+        Voluptate eius blanditiis alias voluptas asperiores debitis atque tempora et, optio sequi eum, reiciendis nobis ratione doloribus, maiores esse dolores. Cum, dolorem similique repellat deleniti sit sunt odit consequuntur! Quia.
+        Illo fugiat libero eius corporis, harum enim? Sint libero, veniam provident blanditiis nostrum maiores illum explicabo in iure quae obcaecati soluta repudiandae officiis dolorem? Aspernatur ea placeat sit tempora porro.</p>
+    </section>
+</main>
+<footer>
+    <form action="" id="form">
+        <h3>Contactanos</h3>
+        <label for="name-contact">Nombre</label>
+        <input 
+            type="text"
+            name="name"
+            id="name-contact"
+            placeholder="Nombre"
+            required
+            minlength="3"
+            maxlength="50"
+        >
+        <label for="">Email</label>
+        <input
+            id="email-contact"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            minlength="8"
             >
-            <label for="">Email</label>
-            <input
-                id="email-contact"
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                minlength="8"
-                >
-            <label for="contact-area">Ingrese su consulta</label>
-            <textarea 
-                name="contact" 
-                id="contact-area" 
-                required 
-                placeholder="Buenas, mi consulta es...">
-            </textarea>
-            <button>Enviar</button>
-        </form>
-        <div class="social">
-            <a href="#" 
-                class="facebook" 
-                title="Seguinos en Facebook" 
-                target="_blank">
-            </a>
-            <a href="#" 
-                class="github" 
-                title="Seguinos en Github" 
-                target="_blank">
-            </a>
-            <a href="#" 
-                class="youtube" 
-                title="Suscribite a Youtube" 
-                target="_blank">
-            </a>
-            <a href="#" 
-                class="instagram" 
-                title="Seguinos en Instagram" 
-                target="_blank">
-            </a>
-        </div>
-        <p class="copy">
-            &copy; <strong>JBNM 2022</strong>. Todos los derechos reservados.
-        </p>
-    </footer>
+        <label for="contact-area">Ingrese su consulta</label>
+        <textarea 
+            name="contact" 
+            id="contact-area" 
+            required 
+            placeholder="Buenas, mi consulta es...">
+        </textarea>
+        <button>Enviar</button>
+    </form>
+    <div class="social">
+        <a href="#" 
+            class="facebook" 
+            title="Seguinos en Facebook" 
+            target="_blank">
+        </a>
+        <a href="#" 
+            class="github" 
+            title="Seguinos en Github" 
+            target="_blank">
+        </a>
+        <a href="#" 
+            class="youtube" 
+            title="Suscribite a Youtube" 
+            target="_blank">
+        </a>
+        <a href="#" 
+            class="instagram" 
+            title="Seguinos en Instagram" 
+            target="_blank">
+        </a>
+    </div>
+    <p class="copy">
+        &copy; <strong>JBNM 2022</strong>. Todos los derechos reservados.
+    </p>
+</footer>
 </body>
+
+<script src="./scripts/main.js"></script>
 </html>
