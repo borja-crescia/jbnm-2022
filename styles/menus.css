@@ -26,10 +26,18 @@ footer{
 /* CABECERA---------------------------- */
 
 .flex-2{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 1150px;
     width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .menu-header{
     position: relative;
@@ -50,17 +58,12 @@ footer{
     display: none;
 }
 .nav-logo{
-    background-image: url('../assets/images/DarkBlueClubLogo.png');
-    height: 6rem;
-    width: 6rem;
-    margin: 1rem;
+    height: 7rem;
+    width: 7rem;
+    margin-top: 1rem;
 }
 .nav-hamb{
-    margin: 2rem;
-}
-.nav-icon{
-    border: .15rem solid black;
-    border-radius: .25rem;
+    margin: 1rem;
 }
 .container{
     display: flex;
@@ -193,9 +196,9 @@ main section{
     cursor: pointer;
 }
 .image-container{
-    background-image: url(../assets/images/sushiramen.png);
-    background-position: center;
-    background-size: cover;
+    /* background-image: url(../assets/images/sushiramen.png); */
+    /* background-position: center;
+    background-size: cover; */
     width: 100%;
     height: 180px;
     border-radius: .25rem;
@@ -291,8 +294,12 @@ footer p{
         text-decoration: none;
         color: #666;
     }
-    .nav-hamb,
     .nav-logo{
+        height: 7rem;
+        width: 7rem;
+        margin-top: 1rem;
+    }
+    .nav-hamb{
         display: none;
     }
     .flex-1{
@@ -302,7 +309,7 @@ footer p{
         width: 100%;
         height: 70px;
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         top: 0;
         display: flex;
         flex-direction: row;
@@ -315,7 +322,7 @@ footer p{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: .75rem;
+        gap: 1rem;
         list-style: none;
     }
     .a-last-child{
