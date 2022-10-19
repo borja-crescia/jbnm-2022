@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JBNM Menú</title>
-    <link rel="stylesheet" href="styles/menus.css">
+    <title>JBNM - Meishi Quilmes</title>
+    <link rel="stylesheet" href="styles/menumeishi.css">
 </head>
 <body>
     <header class="menu-header">
-        <nav class="nav container" id="nav">
-            <div class="flex-1">
-                <div>
-                    <a href="index.html">
-                        <img src="assets/images/Blacklogo.png" alt="Logo JBNM" class="nav-logo">
-                    </a>
-                </div>
-                <ul class="nav-items">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#form">Contacto</a></li>
-                    <li class="a-last-child"><a href="#">Login</a></li>
-                </ul>
-            </div>
-            <div class="flex-2">
-                <a href="index.html">
+        <nav class="navbar">
+            <div class="flex">
+                <a href="#">
                     <img src="assets/images/Blacklogo.png" alt="Logo JBNM" class="nav-logo">
                 </a>
-                <a href="#nav" class="nav-hamb">
-                    <img src="assets/icons/open-menu.png" alt="Icono Menu">
-                </a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#form" class="nav-link">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Acceder</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -241,5 +246,6 @@
             <p>Sitio creado por <strong style="letter-spacing: 2px;">JBNM</strong></p>
         </section>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

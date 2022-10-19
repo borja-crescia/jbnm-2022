@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Josefin+Sans&family=Poppins:wght@100;300&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --first: #c21010;
+    --second: #e64848;
+    --third: #fffde3;
+    --four: #cfe8a9;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVEGADOR ------------------------------------------- */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-right: 1rem;
+    height: 70px;
+    width: 100%;
+    /* position: fixed;
+    z-index: 2;
+    top: 0; */
+}
+.flex{
+    height: 70px;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover{
+    text-align: center;
+    transition: all .25s ease;
+    font-weight: bold;
+}
+
+.nav-logo{
+    height: 7rem;
+    width: 7rem;
+    margin-top: 1rem;
+}
+/* MENU HAMBURGUESA --------------------------------------- */
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--second);
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--four);
+    padding: 2rem;
+    padding-top: 0;
+}
+
+/* CONTENIDO PRINCIPAL ------------------------- */
+main{
+    height: 75vh;
+    /* min-height: 300px;
+    max-height: 1000px; */
+}
+.main-length{
+    max-width: 1150px;
+    height: 75vh;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-menu-logo{
+    width: 300px;
+}
+.search{
+    margin-top: -12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    margin-top: -7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form label{
+    color: #2a4700;
+    font-family: 'Poppins';
+    font-size: larger;
+    padding: .5rem;
+}
+#form div{
+    display: flex;
+}
+
+#form div input{
+    font-size: .9rem;
+    padding-left: 1rem;
+    border: 1px solid #666;
+    border-right: none;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    width: 500px;
+}
+#form div input:hover{
+    background-color: rgb(235, 235, 235);
+}
+#form div input:focus{
+    border: 1px solid #666;
+}
+::placeholder{
+    font-size: larger;
+}
+#form div .search-lupa{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    background-image: url('../assets/icons/search-icon.svg');
+    background-color: var(--second);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+/* FOOTER ------------------------------------------ */
+/* COPYRIGHT ---------------------- */
+.copy{
+    font-size: 1.1rem;
+    color: #fff;
+    padding-top: 1rem;
+    text-align: center;
+}
+.copy strong{
+    letter-spacing: 2px;
+}
+
+/* NAV SOCIAL */
+.nav-social{
+    margin: auto;
+    max-width: 1150px;
+    max-height: 200px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #2a4700;
+    padding: .5rem;
+}
+    /* Nav footer */
+    .nav-footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .nav-footer li a:hover{
+        border-bottom: 1px solid #fff;
+    }
+    .nav-footer li a{
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    /* Redes Sociales */
+    .social{
+        padding: .5rem;
+        display: flex;
+        gap: 10px;
+    }
+    .social a{
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: var(--four);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+    .social a:hover{
+        background-size: 40px;
+    }
+
+    .facebook{
+        background-image: url('../assets/icons/facebook.svg');
+    }
+    .github{
+        background-image: url('../assets/icons/github.svg');
+    }
+    .youtube{
+        background-image: url('../assets/icons/youtube.svg');
+    }
+    .instagram{
+        background-image: url('../assets/icons/instagram.svg');
+    }
+
+/* SMALL DEVICES ------------------------------- */
+
+@media only screen and (max-width: 576px)
+{
+    #form div input{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 1rem;
+        background: linear-gradient(to bottom, #fff, #fff, rgb(207, 207, 207));
+        opacity: .9;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-footer{
+        display: none;
+    }
+
+    footer{
+        position: relative;
+        z-index: -1;
+    }
+}
