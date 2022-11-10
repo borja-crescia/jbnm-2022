@@ -294,7 +294,7 @@ a {
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: auto;
+    margin-left: 4px;
     margin-top: .5rem;
     border-radius: .25rem;
     padding: .5rem 1.5rem;
@@ -385,6 +385,35 @@ footer{
         background-image: url('../assets/icons/instagram.svg');
     }
 
+/*Login*/
+
+.center{
+    margin-bottom: 15vw;
+    margin-top: 11vw;
+    height: 75vh;
+}
+.backg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/W0l.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+.fix{
+    position:fixed;
+}
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    padding-top: 15px;
+    width: 100%;
+    margin-top: 1rem;
+}
+.color{
+    color:#2a4700
+}
+
 /* SMALL DEVICES ------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -427,4 +456,18 @@ footer{
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .backg{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/W0l.gif);
+        background-repeat: repeat;
+        background-size: cover;
+        overflow-y: scroll;
+    }
+
+    .center{
+        margin-bottom: 25vw;
+        margin-top: 17vw;
+        height: 45vh;
+    }
+
 }

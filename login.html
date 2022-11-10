@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>JBNM</title>
+</head>
+<body class="backg">
+    <header class="header">
+        <nav class="navbar">
+            <div class="flex">
+                <a href="#">
+                    <img src="assets/images/Blacklogo.png" alt="Logo JBNM" class="nav-logo">
+                </a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#form" class="nav-link">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="nav-link">Acceder</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    <Section class="center">
+        <form action="" id="form">
+            <h3>Iniciar Sesión</h3>
+            <label for="name-contact">Usuario</label>
+            <input 
+                type="text"
+                name="name"
+                id="name-contact"
+                required
+                minlength="3"
+                maxlength="50"
+            >
+            <label for="">Contraseña</label>
+            <input
+                id="password"
+                type="password"
+                name="password"
+                required
+                minlength="8"
+                >
+        <div class="flex">
+            <button>Iniciar</button>
+            <button>Registrarse</button>
+            </form>
+        </div>
+    </Section> 
+        
+<footer class="foot">
+        <p class="copy">
+           <strong class="color">&copy; JBNM 2022 . Todos los derechos reservados.</strong>
+        </p>
+</footer>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
