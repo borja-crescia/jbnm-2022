@@ -294,7 +294,6 @@ a {
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: 4px;
     margin-top: .5rem;
     border-radius: .25rem;
     padding: .5rem 1.5rem;
@@ -412,6 +411,10 @@ footer{
 }
 .color{
     color:#2a4700
+}
+
+#left{
+    margin-left: 4px;
 }
 
 /* SMALL DEVICES ------------------------------- */
