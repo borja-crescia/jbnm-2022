@@ -3,7 +3,7 @@ let texto = document.querySelector('#sobre-nosotros');
 let str = texto.innerHTML;
 let speed = 200;
 let i = 0;
-texto.innerHTML="";
+texto.innerHTML="&nbsp;";
 function maquinaEscribir (){
     if (i < str.length){
         texto.innerHTML+=str.charAt(i)
