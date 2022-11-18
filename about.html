@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/menumeishi.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Sobre Nosotros</title>
+    <link rel="icon" href="assets/icons/burgericon.png">
+    <title>JBNM - Sobre nosotros</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header about">
         <nav class="navbar">
             <div class="flex">
                 <a href="#">
@@ -26,7 +26,7 @@
                         <a href="#" class="nav-link">Nosotros</a>
                     </li>
                     <li>
-                        <a href="#form" class="nav-link">Contacto</a>
+                        <a href="index.html#form" class="nav-link">Contacto</a>
                     </li>
                     <li>
                         <a href="login.html" class="nav-link">Acceder</a>
@@ -40,71 +40,95 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1 id="sobre-nosotros">Sobre nosotros</h1>
-        
-        <!-- Sobre nosotros general -->
-        <section>
-
-        </section>
+    <main class="about-width">
+        <h1 id="sobre-nosotros">NUESTRO EQUIPO</h1>
         <!-- Sobre nosotros - cada integrante -->
         <section>
-            <ol class="box-integrantes">
-                <li class="flex-card">
+            <ul class="box-integrantes">
                 <!-- Borja -->
-                <img src="assets/images/borja.jpeg" class="foto-perfil" alt="Foto del desarrollador Marco">
-                <p>Borja Crescia - Estudiante de programación apasionado por el diseño web. Actualmente estudiando maquetación web, Javascript, GIT, MongoDB y NodeJS. También tengo conocimientos en Testing QA; y me encuentro realizando una beca de Google sobre UX. Ando en búsqueda de mi primera experiencia laboral en el sector IT para dedicarme a lo que más me gusta.</p>
-                        <a href="https://www.linkedin.com/in/borja-crescia" target="_blank">
+                <li class="flex-card" style="border-top: 1px solid rgb(212, 212, 212);">
+                    <div>
+                        <img src="assets/images/borja.jpeg" class="foto-perfil" alt="Foto del desarrollador Borja">
+                        <div class="icons-flex">
+                            <a href="https://github.com/borja-crescia" target="_blank">
                             <img src="assets/icons/github.png" alt="Icono github" class="iconos">
-                        </a>
-                        <a href="https://github.com/borja-crescia">
+                            </a>
+                            <a href="https://www.linkedin.com/in/borja-crescia" 
+                            target="_blank">
                             <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
-                        </a>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Borja Crescia</h2>
+                        <p>Estudiante de programación apasionado por el diseño web. Actualmente estudiando maquetación web, Javascript, GIT, MongoDB, NodeJS y React. También tengo conocimientos en Testing QA; y me encuentro realizando una beca de Google sobre UX. Ando en búsqueda de mi primera experiencia laboral en el sector IT para dedicarme a lo que más me gusta.</p>
+                    </div>
                 </li>
                 <!-- Nahuel -->
                 <li class="flex-card">
-                    <img src="assets/images/Foto_corriculum_cortada_fondo_blanco.jpg" class="foto-perfil" alt="Foto del desarrollador Julio">
-                    <p>Mi nombre es Nahuel Monje, estudiante de Licenciatura en informática, apasionado por los datos, los sistemas de información y la inteligencia artificial. Busco aprender y crear cosas nuevas</p>
+                    <div>
+                        <img src="assets/images/Foto_corriculum_cortada_fondo_blanco.jpg" class="foto-perfil" alt="Foto del desarrollador Nahuel">
+                        <div class="icons-flex">
+                            <a href="https://github.com/monjenahuel" target="_blank">
+                            <img src="assets/icons/github.png" alt="Icono github" class="iconos">
+                            </a>
                             <a href="https://www.linkedin.com/in/monjenahuel/" target="_blank">
-                                <img src="assets/icons/github.png" alt="Icono github" class="iconos">
+                            <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
                             </a>
-                            <a href="https://github.com/monjenahuel">
-                                <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
-                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Nahuel Monje</h2>
+                        <p>Estudiante de Licenciatura en informática, apasionado por los datos, los sistemas de información y la inteligencia artificial. Busco aprender y crear cosas nuevas</p>
+                    </div>
                 </li>
                 <!-- Julio -->
                 <li class="flex-card">
-                    <img src="assets/images/pwp.jpg" class="foto-perfil" alt="Foto del desarrollador Julio">
-                    <p>Mi nombre es Julio Pralong, Trabajo como consultor Sap security/Fiori  y soy estudiante de programación FullStack MERN en Fundación Pescar, me encuentro en constante preparación y aprendizaje de nuevas tecnologías de manera autodidacta. En estos últimos años también me dedique además a profundizarme en el área de UX/UI mediante cursos y practica constante.</p>
+                    <div>
+                        <img src="assets/images/pwp.jpg" class="foto-perfil" alt="Foto del desarrollador Julio">
+                        <div class="icons-flex">
+                            <a href="https://github.com/JulioPralong" target="_blank">
+                            <img src="assets/icons/github.png" alt="Icono github" class="iconos">
+                            </a>
                             <a href="https://www.linkedin.com/in/julio-m-pralong-developer" target="_blank">
-                                <img src="assets/icons/github.png" alt="Icono github" class="iconos">
+                            <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
                             </a>
-                            <a href="https://github.com/MarcoPriani">
-                                <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
-                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Julio Pralong</h2>
+                        <p>Trabajo como consultor Sap security/Fiori  y soy estudiante de programación FullStack MERN en Fundación Pescar, me encuentro en constante preparación y aprendizaje de nuevas tecnologías de manera autodidacta. En estos últimos años también me dedique además a profundizarme en el área de UX/UI mediante cursos y practica constante.</p>
+                    </div>
                 </li>
                 <!-- Marco -->
-                <li class="flex-card">
-                    <img src="assets/images/marco-foto.jpeg" class="foto-perfil" alt="Foto del desarrollador Marco">
-                    <p>Mi nombre es Marco Priani, tengo 23 años. Soy técnico en Marketing y un apasionado por la tecnología. Me gusta desarrollar páginas web, tengo conocimientos del <strong>Stack MERN</strong>. También me interesa mucho la <strong>Ciberseguridad y el Análisis de datos</strong>, actualmente me sigo capacitando en todas estas materias y estoy en busca de mi primera experiencia en el sector IT.</p>
+                <li class="flex-card" style="border-bottom: none;">
+                    <div>
+                        <img src="assets/images/marco-foto.jpeg" class="foto-perfil" alt="Foto del desarrollador Marco">
+                        <div class="icons-flex">
                             <a href="https://github.com/MarcoPriani" target="_blank">
-                                <img src="assets/icons/github.png" alt="Icono github" class="iconos">
+                            <img src="assets/icons/github.png" alt="Icono github" class="iconos">
                             </a>
-                            <a href="https://github.com/MarcoPriani">
-                                <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
+                            <a href="https://github.com/MarcoPriani" target="_blank">
+                            <img src="assets/icons/linkedin.png" alt="Icono linkedin" class="iconos">
                             </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Marco Priani</h2>
+                        <p>Soy técnico en Marketing y un apasionado por la tecnología. Me gusta desarrollar páginas web, tengo conocimientos del Stack MERN. También me interesa mucho la Ciberseguridad y el Análisis de datos, actualmente me sigo capacitando en todas estas materias y estoy en busca de mi primera experiencia en el sector IT.</p>
+                    </div>
                 </li>
-            </ol>
+            </ul>
         </section>
     </main>
     <footer>
         <div class="nav-social">
             <ul class="nav-footer">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#form">Contacto</a></li>
-                <li><a href="#">Acceder</a></li>
+                <li><a href="index.html#form">Contacto</a></li>
+                <li><a href="login.html">Acceder</a></li>
             </ul>
             <div class="social">
                 <a href="#" 
@@ -133,6 +157,7 @@
             &copy; <strong>JBNM 2022</strong>. Todos los derechos reservados.
         </p>
     </footer>
-    <script src="scripts/write.js"></script>
+    <!-- <script src="scripts/write.js"></script> -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
