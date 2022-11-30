@@ -187,8 +187,10 @@ a {
     /* ¿QUIENES SOMOS? ¿QUE OFRECEMOS? */
     .main-width{
         height: 800px;
+        width: 100%;
         background-image: url('../assets/images/fondoindex.png');
         background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed;
     }
     .main-grid{
