@@ -49,3 +49,4 @@ const getItem = (array,direction) =>{
     }
     newItem.classList.add('active');
 }
+window.setInterval( () => next.click(), 10000);

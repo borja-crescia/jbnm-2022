@@ -14,6 +14,10 @@
     --four: #cfe8a9;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 li {
     list-style: none;
 }
@@ -182,19 +186,26 @@ a {
 
     /* ¿QUIENES SOMOS? ¿QUE OFRECEMOS? */
     .main-width{
-        background-color: #f6ffea;
+        height: 800px;
+        background-image: url('../assets/images/fondoindex.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .main-grid{
+        height: 100%;
         max-width: 750px;
         margin: auto;
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        grid-auto-rows: minmax(280px, auto);
+        grid-auto-rows: minmax(380px, auto);
         grid-auto-flow: dense;
         gap: 1rem;
     }
     .main-content{
+        height: 380px;
+        align-self: center;
+        justify-self: center;
         background-color: #fff;
         color: #2a4700;
         margin: 2rem auto;
@@ -211,13 +222,16 @@ a {
 
     /* ¿COMO REALIZO MI PEDIDO?--------------------- */
     .main-tips{
-        /* height: 500px; */
+        height: 900px;
+    }
+    .main-tips-img{
+        width: 250px;
     }
     .grid-row{
         max-width: 1000px;
         margin: .5rem auto 3rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
         grid-auto-rows: minmax(100px, auto);
         gap: 2rem;
     }
@@ -237,7 +251,7 @@ a {
         justify-content: flex-start;
         align-items: center;
         gap: 1rem;
-        height: 160px;
+        height: 630px;
     }
     .grid-row div h3{
         color: #2a4700;
@@ -526,6 +540,12 @@ footer{
         margin-top: 17vw;
         height: 45vh;
     }
+
+    /* ¿COMO REALIZO MI PEDIDO? */
+    .main-tips{
+        height: 100%;
+    }
+
     /* SOBRE NOSOTROS */
     .about-width h1{
         margin-bottom: -1rem;
