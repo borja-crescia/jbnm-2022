@@ -561,6 +561,9 @@ footer{
     }
 
     /* MAIN CONTENT ------------------- */
+    .main-width {
+        background-attachment: unset;
+    }
     .main-grid{
         gap: 1rem;
     }
