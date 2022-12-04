@@ -4,39 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/menumeishi.css">
-    <link rel="icon" href="assets/icons/burgericon.png">
     <title>JBNM - Meishi Quilmes</title>
+    <link rel="stylesheet" href="styles/menumeishi.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
 </head>
 <body>
     <header class="menu-header">
         <nav class="navbar">
             <div class="flex">
-                <a href="#">
+                <a href="index.html">
                     <img src="assets/images/Blacklogo.png" alt="Logo JBNM" class="nav-logo">
                 </a>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="index.html" class="nav-link">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./menu.html" class="nav-link">Menu</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-link">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="index.html#form" class="nav-link">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="./login.html" class="nav-link">Acceder</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <a href="#cart">
+                    <img src="assets/icons/cart.png" alt="Ver Mi Carrito" class="cart">
+                </a>
             </div>
         </nav>
     </header>
@@ -51,16 +32,16 @@
                     <h3 class="local-p center">Tu local favorito de sushi</h3>
                     <div class="info-container">
                         <p class="local-p"> <img src="assets/icons/locationicon.png" alt="Localizacion Icon" class="local-location"> Moreno 359, Quilmes, Provincia de Buenos&nbsp;Aires</p>
-                        <p class="local-p"> <img src="assets/icons/timeicon.png" alt="Localizacion Icon" class="local-location"> Martes a Domingos, de 10hrs a 23:30hrs. Domingos de 17hrs&nbsp;a&nbsp;23:30hrs</p>
+                        <p class="local-p"> <img src="assets/icons/timeicon.png" alt="Localizacion Icon" class="local-location"> Martes a sábado, de 10hrs a 23:30hrs. Domingos de 17hrs&nbsp;a&nbsp;23:30hrs</p>
                     </div>
                     <div class="social-local-container">
                         <div class="social-local">
-                            <a href="#" 
+                            <a href="https://www.facebook.com/meishiquilmes" 
                                 class="facebook-local"
                                 title="Seguinos en Facebook"
                                 target="_blank">
                             </a>
-                            <a href="#" 
+                            <a href="https://www.instagram.com/meishiquilmes/" 
                                 class="instagram-local"
                                 title="Seguinos en Instagram"
                                 target="_blank">
@@ -75,178 +56,32 @@
                 </div>
             </article>
         </section>
-        <section>
-            <h3 id="category-title">Entradas</h3>
-            <div class="product-grid small">
-                <div class="local-product">
-                    <img src="assets/images/sushiharumaki.png" alt="Harumaki" class="image-container">
-                    <h3>Harumaki</h3>
-                    <p>$ 710,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiyakitori.png" alt="Yakitori" class="image-container">
-                    <h3>Yakitori</h3>
-                    <p>$ 1.060,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushigyozathai.png" alt="Gyoza Thai" class="image-container">
-                    <h3>Gyoza Thai</h3>
-                    <p>$ 910,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiebifurai.png" alt="Ebi Furai" class="image-container">
-                    <h3>Ebi Furai</h3>
-                    <p>$ 1.480,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiikafurai.jpg" alt="Ika Furai" class="image-container">
-                    <h3>Ika Furai</h3>
-                    <p>$ 1.480,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushikaraage.jpg" alt="Karaage" class="image-container">
-                    <h3>Karaage</h3>
-                    <p>$ 910,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushigyoza.jpg" alt="Gyoza" class="image-container">
-                    <h3>Gyoza</h3>
-                    <p>$ 960,00</p>
-                </div>
+        <div>
+            <h3 id="category-title">MENÚ</h3>
+            <div>
+                <!-- Elementos generados a partir del JSON -->
+                <div id="items" class="product-grid"></div>
+                <!-- Carrito -->
+                <aside class="carrito-style" id="cart">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <div class="cart-flex">
+                        <p class="text-right">Total: $ <span id="total"></span></p>
+                        <button id="boton-vaciar" class="empty-button">VACIAR</button>
+                        <button id="boton-confirmar" class="buy-button">CONFIRMAR</button>
+                    </div>
+                </aside>
             </div>
-        </section>
-        <section>
-            <h3 id="category-title">Platos Principales</h3>
-            <div class="product-grid small">
-                <div class="local-product">
-                    <img src="assets/images/sushilomosaltado.png" alt="Lomo Saltado" class="image-container">
-                    <h3>Lomo Saltado</h3>
-                    <p>$ 1.760,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushikatsukare.png" alt="Katsu Kare" class="image-container">
-                    <h3>Katsukare</h3>
-                    <p>$ 1.640,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushibutateridon.jpg" alt="Buta Teri Don" class="image-container">
-                    <h3>Buta Teri Don</h3>
-                    <p>$ 1.350,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushitoriteri.jpg" alt="Toriteri" class="image-container"> 
-                    <h3>Toriteri</h3>
-                    <p>$ 1.350,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiyakisoba.jpg" alt="Yakisoba" class="image-container">
-                    <h3>Yakisoba</h3>
-                    <p>$ 960,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiramen.png" alt="Ramen Miso/Shoyu" class="image-container">
-                    <h3>Ramen Miso/Shoyu</h3>
-                    <p>$ 1.250,00</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3 id="category-title">Combinados</h3>
-            <div class="product-grid small">
-                <div class="local-product">
-                    <img src="assets/images/sushimiku.png" alt="Miku" class="image-container">
-                    <h3>Miku (20u)</h3>
-                    <p>$ 2.820,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushimiyagi.png" alt="Miyagi" class="image-container">
-                    <h3>Miyagi (20u)</h3>
-                    <p>$ 3.660,00</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3 id="category-title">Sushi Rolls</h3>
-            <div class="product-grid small">
-                <div class="local-product">
-                    <img src="assets/images/sushidenver.png" alt="Denver Roll" class="image-container">
-                    <h3>Denver Roll (5u)</h3>
-                    <p>$ 1.170,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiorlando.png" alt="Orlando Roll" class="image-container">
-                    <h3>Orlando Roll (5u)</h3>
-                    <p>$ 1.130,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushispicy.png" alt="Spicy Roll" class="image-container">
-                    <h3>Spicy Roll (5u)</h3>
-                    <p>$ 1.070,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushisashimi.png" alt="Sashimi" class="image-container">
-                    <h3>Sashimi (5u)</h3>
-                    <p>$ 1.420,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushinigiri.jpg" alt="Nigiri" class="image-container">
-                    <h3>Nigiri Salmon (5u)</h3>
-                    <p>$ 1.200,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushigeisha.png" alt="Geisha" class="image-container">
-                    <h3>Geisha Mango (2u)</h3>
-                    <p>$ 670,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiasahi.png" alt="Asahi Roll" class="image-container">
-                    <h3>Asahi Roll (5u)</h3>
-                    <p>$ 1.070,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushitexmex.png" alt="Tex Mex Roll" class="image-container">
-                    <h3>Tex Mex Roll (5u)</h3>
-                    <p>$ 1.070,00</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3 id="category-title">Bebidas</h3>
-            <div class="product-grid small">
-                <div class="local-product">
-                    <img src="assets/images/sushicoca.png" alt="Coca-Cola" class="image-container">
-                    <h3>Coca-Cola 500ml</h3>
-                    <p>$ 250,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushifanta.png" alt="Fanta" class="image-container">
-                    <h3>Fanta 500ml</h3>
-                    <p>$ 250,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiagua.png" alt="Agua Bon Aqua" class="image-container">
-                    <h3>Bon Aqua 500ml</h3>
-                    <p>$ 200,00</p>
-                </div>
-                <div class="local-product">
-                    <img src="assets/images/sushiheineken.png" alt="Heineken" class="image-container">
-                    <h3>Heineken Lata 330ml</h3>
-                    <p>$ 460,00</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <button class="buy-button">REALIZAR PEDIDO</button>
-        </section>
-        <section>
-            <img src="assets/icons/cart.png" alt="Ver Mi Carrito" class="cart">
-        </section>
+        </div>
     </main>
     <footer>
         <section>
             <p>Sitio creado por <strong style="letter-spacing: 2px;">JBNM</strong></p>
         </section>
     </footer>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
