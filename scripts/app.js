@@ -367,14 +367,27 @@ function vaciarCarrito() {
     renderizarCarrito();
 }
 
+//Lee y retorna como string el numero de mesa obtenida de la URL. Si no la encuentra retorna 10
+function nroDeMesa(){
+    let nroDeMesa = 10
+    let url = document.URL.split("?mesa=",2)[1]
+    let regex = /\d{1,2}/
+    if(regex.test(url)){
+        nroDeMesa = url.match(regex)[0]
+    } 
+    return(nroDeMesa)
+}
+
 function confirmarPedido() {
     let productosSeleccionadosJson = JSON.stringify(productosSeleccionados);
     console.log(productosSeleccionadosJson);
 
     // Llamar al backend con los productos seleccionados
     let xhr = new XMLHttpRequest();
+    let url = "https://jbnm-backend-production.up.railway.app/mesas/" + nroDeMesa() + "/pedido"
+    console.log(url)
     
-    xhr.open("POST", "https://jbnm-backend-production.up.railway.app/mesas/1/pedido");
+    xhr.open("POST", url);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
