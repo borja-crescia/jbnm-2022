@@ -198,6 +198,7 @@ const divisa = '$';
 const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
+const DOMtotal2 = document.querySelector('#total2');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonConfirmar = document.querySelector('#boton-confirmar');
 
@@ -321,6 +322,7 @@ function renderizarCarrito() {
     });
     // Renderizamos el precio total en el HTML
     DOMtotal.textContent = calcularTotal();
+    DOMtotal2.textContent = calcularTotal();
 }
 
 /**
@@ -403,9 +405,31 @@ function confirmarPedido() {
     vaciarCarrito();
 }
 
+function pedirConfirmacionDelPedido(){
+    Swal.fire({
+        title: '¿Deseas confirmar el pedido?',
+        text: "El mismo será enviado a la cocina para su preparación",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si! Tengo hambre',
+        cancelButtonText: 'Cancelar :('
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            'Confirmado!',
+            'Tu pedido ya está siendo preparado, si queres agregar algo más simplemente agregalo ;)',
+            'success',
+            
+            ).then(confirmarPedido())
+        }
+    })
+}
+
 // Eventos
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
-DOMbotonConfirmar.addEventListener('click', confirmarPedido);
+DOMbotonConfirmar.addEventListener('click', pedirConfirmacionDelPedido);
 
 // Inicio
 renderizarProductos();
