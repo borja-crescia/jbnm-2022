@@ -459,6 +459,10 @@ footer p{
     }
 }
 
+.totalNav{
+    opacity: 0;
+}
+
 /* SMALL DEVICE NAVEGATOR --------------------- */
 
 @media screen and (max-width: 768px){
@@ -482,9 +486,12 @@ footer p{
     .nav-menu.active {
         left: 0;
     }
+    .totalNav{
+        font-weight: 600;
+        font-size: large;
+        color: black;
+        opacity: 1;
+    }
+
 }
 
-.totalNav{
-    font-weight: 600;
-    font-size: large;
-}
